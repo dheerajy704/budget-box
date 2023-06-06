@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style style="display:block">
+        body {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            position: relative;
+            background-color: black;
+        }
+
+        .hold {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            clip: rect(0px, 150px, 150px, 75px);
+        }
+
+        .pie {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            clip: rect(0px, 75px, 150px, 0px);
+            /* background-color: red; */
+            /* transform: rotate(83deg); */
+        }
+
+        .category {
+            width: 120px;
+            background-color: black;
+            aspect-ratio: 1/1;
+            position: absolute;
+            border-radius: 100%;
+            top: 50%;
+            z-index: 2;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="category">
+        Hello
+    </div>
+    <div class="hold" style="transform: rotate(0deg);">
+        <div class="pie" style="background-color:red; transform:rotate(72deg)"></div>
+    </div>
+    <div class="hold" style="transform:rotate(72deg)">
+        <div class="pie" style="background-color:white; transform:rotate(36deg)"></div>
+    </div>
+    <div class="hold" style="transform:rotate(108deg)">
+        <div class="pie" style="background-color:green; transform:rotate(180deg)"></div>
+
+    </div>
+    <div class="hold" style="transform:rotate(286deg)">
+        <div class="pie" style="background-color:green; transform:rotate(74deg)"></div>
+
+    </div>
+
+
+</body>
+
+</html>
